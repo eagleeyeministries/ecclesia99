@@ -13,35 +13,40 @@
 <header class="topbar">
   <div class="fill">
     <div class="container">
-      <a class="brand" href="#">Ecclesia Institute</a>
+      <a class="brand" href="/">Ecclesia Institute</a>
       <ul class="nav">
-        <li class="active">
-          <a href="#">Home</a>
+        <li id="home">
+          <a href="/">Home</a>
+        </li>
+        <li id="about">
+          <a href="/about">About Ecclesia</a>
+        </li>
+        <li id="community">
+          <a href="/community">Our Community</a>
+        </li>
+        <li id="courses">
+          <a href="/courses">Courses</a>
+        </li>
+        <li id="contact">
+          <a href="/contact">Contact Us</a>
         </li>
       </ul>
     </div>
   </div>
 </header>
 
+
 <div class="container">
   <%= yield %>
 </div>
 
 <footer>
-  <div class="container">
-    <div class="row">
-      <div class="span10">
-        <p>Other resources</p>
-        <a href="#">Soaring for Wisdom</a><br />
-        <a href="#">Community of Saint John</a><br />
-        <a href="#">Eagle Eye</a>
-      </div>
-      <div class="span6">
-        <p>Have any questions? Call us</p>
-        <h2 style="font-weight:normal;">(310) 545-6623</h2>
-      </div>
-    </div>
-  </div>
+  <p>
+    Contact us:
+    <a href="mailto:brudernathan@yahoo.com">brudernathan@yahoo.com</a> |
+    (310) 545-6623<br />
+    &copy; 2012 <a href="http://www.communityofstjohn.com/">Community of St. John</a>
+  </p>
 </footer>
 
 </body>

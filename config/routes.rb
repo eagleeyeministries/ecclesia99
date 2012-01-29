@@ -1,5 +1,10 @@
 Ecclesia::Application.routes.draw do
-  get "pages/index"
+  get "index" => "pages#index"
+  get "about" => "pages#about"
+  get "community" => "pages#community"
+  get "courses" => "pages#courses"
+  get "contact" => "pages#contact"
+  root :to => "pages#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

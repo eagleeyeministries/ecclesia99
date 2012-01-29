@@ -9,3 +9,12 @@ $ ->
   $('a.lightbox').each( ->
     $(this).lightBox()
   )
+  pagePath = window.location.pathname
+  if (pagePath.indexOf("about") != -1)
+    $('ul.nav li#about').addClass('active')
+  else if (pagePath.indexOf("community") != -1)
+    $('ul.nav li#community').addClass('active')
+  else if (pagePath.indexOf("course") != -1)
+    $('ul.nav li#courses').addClass('active')
+  else
+    $('ul.nav li#home').addClass('active')

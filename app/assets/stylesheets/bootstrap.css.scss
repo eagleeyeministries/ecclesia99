@@ -181,7 +181,6 @@ textarea {
  * Basic and global styles for generating a grid system, structural layout, and page templates
  * ------------------------------------------------------------------------------------------- */
 body {
-  background-color: #ffffff;
   margin: 0;
   font-family: "Hoefler Text", Constantia, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
   //font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -189,7 +188,7 @@ body {
   font-weight: normal;
   line-height: 18px;
   color: #404040;
-  padding-top:60px;
+  padding-top:38px;
 }
 .container {
   width: 940px;
@@ -228,6 +227,17 @@ body {
 }
 .container-fluid > .content {
   margin-left: 240px;
+}
+.content {
+  background-color: white;
+  padding: 20px;
+  margin: 0 -20px;
+  -webkit-border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  border-radius: 6px 6px 6px 6px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+  box-shadow: 0 1px 2px rgba(0,0,0,.15);
 }
 a {
   color: #0069d6;
@@ -442,7 +452,7 @@ h6 {
 }
 h3 {
   font-size: 22px;
-  margin-bottom:.5em;
+  margin-bottom: .5em;
 }
 h3 small {
   font-size: 14px;
@@ -471,6 +481,7 @@ ol ul {
   margin-bottom: 0;
 }
 ul {
+  margin-bottom: .6em;
   list-style: disc;
 }
 ol {
@@ -1775,51 +1786,45 @@ a.menu:after, .dropdown-toggle:after {
 }
 .hero-unit {
   background-color: #f5f5f5;
-  margin-bottom: 30px;
+  margin: 1.5em 0 1.5em 0;
   padding: 50px 60px 35px 60px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
+  background-image: no-repeat;
 }
 .hero-unit h1 {
   font-size: 54px;
   line-height: 1em;
   padding-top:.2em;
   letter-spacing: -1px;
-  background: rgba(250, 250, 250, 0.6);
   margin-bottom:.5em;
-  width: 52%;
+  width: 60%;
   padding:.2em;
+}
+.hero-unit h1.highlight {
+  background: rgba(250, 250, 250, 0.6);
 }
 .hero-unit p {
   font-size: 22px;
   font-weight: 200;
   line-height: 1.2em;
 }
-.hero-unit .highlight {
+.hero-unit div.highlight {
   background: rgba(250, 250, 250, 0.6);
-  width: 66%;
+  width: 70%;
   padding: .5em .5em 0 .5em;
 }
 footer {
-  margin-top: 17px;
-  padding-top: 17px;
+  width: 700px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   border-top: 1px solid #ddd;
-  margin-bottom: 17px;
-
-  background-image: linear-gradient(bottom, rgb(255,255,255) 18%, rgb(240,240,240) 61%);
-  background-image: -o-linear-gradient(bottom, rgb(255,255,255) 18%, rgb(240,240,240) 61%);
-  background-image: -moz-linear-gradient(bottom, rgb(255,255,255) 18%, rgb(240,240,240) 61%);
-  background-image: -webkit-linear-gradient(bottom, rgb(255,255,255) 18%, rgb(240,240,240) 61%);
-  background-image: -ms-linear-gradient(bottom, rgb(255,255,255) 18%, rgb(240,240,240) 61%);
-
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(0.18, rgb(255,255,255)),
-    color-stop(0.61, rgb(240,240,240))
-  );
+  text-align: center;
+  margin-top: 1.5em;
+  padding-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 .page-header {
   margin-bottom: 17px;
@@ -1901,6 +1906,7 @@ footer {
   border-color: #339bb9 #339bb9 #22697d;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
+
 .btn {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   cursor: pointer;
@@ -2071,9 +2077,6 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
 }
 .alert-message h5 {
   line-height: 18px;
-}
-.alert-message p {
-  margin-bottom: 0;
 }
 .alert-message div {
   margin-top: 5px;
@@ -2520,6 +2523,7 @@ img.link:hover {
   margin-left:auto;
   margin-right:auto;
   display:block;
+  text-align:center;
 }
 .left {
   float:left;
@@ -2529,5 +2533,37 @@ img.link:hover {
   float:right;
 }
 .pushtop1 {
-  margin-top:1em;
+  margin-top:1.5em;
+}
+.scatter {
+  width: 90%;
+  position: relative;
+  //margin-bottom: -40px;
+  margin-bottom: 1.5em;
+}
+/*
+.scatter.right {
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+}
+.scatter.left {
+  -webkit-transform: rotate(-7deg);
+  -moz-transform: rotate(-7deg);
+}
+.scatter:hover {
+  -webkit-transform: rotate(0);
+  -webkit-transition: all 0.6s ease;
+  -webkit-box-shadow: 0px 1px 1px 1px transparent;
+}
+*/
+.alert-message.call-to-action {
+  margin: 3em 0 3em 0;
+  background: #fafafa;
+  border-color: #ddd;
+}
+.alert-message a {
+  margin-bottom:.75em;
+}
+.alert-message p {
+  margin: 1em 0 0 0 !important;
 }
