@@ -16,5 +16,7 @@ $ ->
     $('ul.nav li#community').addClass('active')
   else if (pagePath.indexOf("course") != -1)
     $('ul.nav li#courses').addClass('active')
+  else if (pagePath.indexOf("contact") != -1)
+    $('ul.nav li#contact').addClass('active')
   else
     $('ul.nav li#home').addClass('active')
