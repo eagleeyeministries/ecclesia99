@@ -24,4 +24,8 @@ washing_feet.png: washing_feet-49085b84498c3e35fd800ab903b88292.png
 jquery-ui.min.js: jquery-ui.min-0424e108178defa1cc794ee24fc92d24.js
 jquery.min.js: jquery.min-460459a37590253002f65e6137a90b87.js
 application.js: application-f9a44b39ca2b2f870db6e26c576f072b.js
+<<<<<<< HEAD
 application.css: application-ba7740339648212170355cf5b5f059ea.css
+=======
+application.css: application-a06f1ac2f226477d699cb349d9ae84b5.css
+>>>>>>> 21ec95be7dca72543832ef544cc39d44531b1024
