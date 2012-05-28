@@ -5,7 +5,9 @@
   </div>
   <p style="margin-top:.5em;">
     <a class="btn large" href="/about">Learn more</a>
-    <a href="https://www.umary.edu/forms/ecclesia/" class="btn primary large" href="#">Sign up</a>
+    <% if Date.today < Date.new(2012, 6, 2) %>
+      <a href="https://www.umary.edu/forms/ecclesia/" class="btn primary large" href="#">Sign up</a>
+    <% end %>
   </p>
 </div>
 
@@ -42,7 +44,9 @@
     </ul>
     <p>
       Don't let the cost deter you; there are scholarships available.
-      <a href="https://docs.google.com/document/d/1eJv9z5wvPVTVA5UbDQK6ZmXFjPAkEuL5jpzbJw4k1qM/edit" target="_blank" class="btn">Apply for a scholarship »</a>
+      <% if Date.today < Date.new(2012, 6, 2) %>
+        <a href="https://docs.google.com/document/d/1eJv9z5wvPVTVA5UbDQK6ZmXFjPAkEuL5jpzbJw4k1qM/edit" target="_blank" class="btn">Apply for a scholarship »</a>
+      <% end %>
     </p>
   </div>
 </div>

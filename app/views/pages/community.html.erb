@@ -84,12 +84,14 @@
   time... in an understandable and persuasive fashion" (Evangelii Nuntiandi, 3).
   </p>
 
-  <div class="span5 center">
-    <div class="alert-message block-message call-to-action">
-      <h3 class="center">Grow in your Faith</h3>
-      <a href="https://www.umary.edu/forms/ecclesia/" class="btn primary large center" style="width:70%;">Sign up for Ecclesia</a>
+  <% if Date.today < Date.new(2012, 6, 2) %>
+    <div class="span5 center">
+      <div class="alert-message block-message call-to-action">
+        <h3 class="center">Grow in your Faith</h3>
+        <a href="https://www.umary.edu/forms/ecclesia/" class="btn primary large center" style="width:70%;">Sign up for Ecclesia</a>
+      </div>
     </div>
-  </div>
+  <% end %>
 </div>
 
 <div class="span5 offset1">
@@ -99,15 +101,17 @@
     <%= link_to 'Learn More »', courses_path, :class => "btn" %>
   </p>
   
-  <div class="alert-message block-message call-to-action">
-    <h3 class="center">Grow in your Faith</h3>
-    <a href="https://www.umary.edu/forms/ecclesia/" class="btn primary large center" style="width:70%;">Sign up for Ecclesia</a>
-    <p>
-      Questions? Contact Maureen Poirier at
-      (800) 288-6279, ext. 8329 or
-      ecclesia@umary.edu
-    </p>
-  </div>
+  <% if Date.today < Date.new(2012, 6, 2) %>
+    <div class="alert-message block-message call-to-action">
+      <h3 class="center">Grow in your Faith</h3>
+      <a href="https://www.umary.edu/forms/ecclesia/" class="btn primary large center" style="width:70%;">Sign up for Ecclesia</a>
+      <p>
+        Questions? Contact Maureen Poirier at
+        (800) 288-6279, ext. 8329 or
+        ecclesia@umary.edu
+      </p>
+    </div>
+  <% end %>
 </div>
 </div>
 </div>

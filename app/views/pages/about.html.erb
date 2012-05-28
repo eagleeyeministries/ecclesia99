@@ -25,12 +25,14 @@
     <p>“I love how cultured Ecclesia is. From talking to a Senator to watching and performing Antigone, I really feel that it helps form well rounded individuals.”</p>
     <p>“What has impacted me the most was all night Adoration and the amount of time we spent in Adoration the whole month. I’ve never spent so much time with Jesus, and I loved it!”</p>
 
-  <div class="span5 center">
-    <div class="alert-message block-message call-to-action">
-      <h3 class="center">Grow in your Faith</h3>
-      <a href="https://www.umary.edu/forms/ecclesia/" class="btn primary large center" style="width:70%;">Sign up for Ecclesia</a>
+  <% if Date.today < Date.new(2012, 6, 2) %>
+    <div class="span5 center">
+      <div class="alert-message block-message call-to-action">
+        <h3 class="center">Grow in your Faith</h3>
+        <a href="https://www.umary.edu/forms/ecclesia/" class="btn primary large center" style="width:70%;">Sign up for Ecclesia</a>
+      </div>
     </div>
-  </div>
+  <% end %>
 </div>
 
   <div class="span5 offset1">

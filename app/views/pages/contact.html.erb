@@ -15,7 +15,7 @@
     <p>
       <a href="http://www.umary.edu/ecclesia">www.umary.edu/ecclesia</a><br />
       Ecclesia is proudly presented by Eagle Eye Ministries. View the <a href="http://www.youtube.com/user/EagleEyeMinistry">Eagle Eye YouTube channel</a><br />
-      Visit Eagle Eye at <a href="http://www.soaringforwisdom.com">Soaring for Wisdom</a>
+      Visit Eagle Eye at <a href="http://www.soaringforwisdom.com">Soaring for Wisdom</a><br />
       <a href="/assets/ecclesia_brochure.pdf">Download the brochure</a><br />
       <a href="/assets/ecclesia_poster.pdf">Download the poster</a>
     </p>
@@ -23,9 +23,11 @@
       </div>
 
   <div class="span5">
-    <div class="alert-message block-message call-to-action" style="margin-top:0;">
-      <h3 class="center">Grow in your Faith</h3>
-      <a href="https://www.umary.edu/forms/ecclesia/" class="btn primary large center" style="width:70%;">Sign up for Ecclesia</a>
-    </div>
+    <% if Date.today < Date.new(2012, 6, 2) %>
+      <div class="alert-message block-message call-to-action" style="margin-top:0;">
+        <h3 class="center">Grow in your Faith</h3>
+        <a href="https://www.umary.edu/forms/ecclesia/" class="btn primary large center" style="width:70%;">Sign up for Ecclesia</a>
+      </div>
+    <% end %>
   </div>
 </div>

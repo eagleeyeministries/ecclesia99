@@ -48,14 +48,16 @@
   </div>
 
 <div class="span5 offset1">
-  <div class="alert-message block-message call-to-action">
-    <h3 class="center">Grow in your Faith</h3>
-    <a href="https://www.umary.edu/forms/ecclesia/" class="btn primary large center" style="width:70%;">Sign up for Ecclesia</a>
-    <p>
-      Questions? Contact Maureen Poirier at
-      (800) 288-6279, ext. 8329 or
-      ecclesia@umary.edu
-    </p>
-  </div>
+  <% if Date.today < Date.new(2012, 6, 2) %>
+    <div class="alert-message block-message call-to-action">
+      <h3 class="center">Grow in your Faith</h3>
+      <a href="https://www.umary.edu/forms/ecclesia/" class="btn primary large center" style="width:70%;">Sign up for Ecclesia</a>
+      <p>
+        Questions? Contact Maureen Poirier at
+        (800) 288-6279, ext. 8329 or
+        ecclesia@umary.edu
+      </p>
+    </div>
+  <% end %>
 </div>
 </div>

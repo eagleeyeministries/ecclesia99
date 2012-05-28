@@ -48,6 +48,9 @@
 
 
 <div class="container">
+  <% if Date.today < Date.new(2012, 6, 2) %>
+    <div class="alert alert-info"><strong>Heads up!</strong> June 1st is the last day to apply for the Ecclesia Institute. Be sure to turn in your application before then.</div>
+  <% end %>
   <%= yield %>
 </div>
 
