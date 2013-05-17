@@ -4,6 +4,7 @@ Ecclesia::Application.routes.draw do
   get "community" => "pages#community"
   get "courses" => "pages#courses"
   get "music" => "pages#music"
+  get "testimonials" => "pages#testimonials"
   get "contact" => "pages#contact"
   root :to => "pages#index"
 

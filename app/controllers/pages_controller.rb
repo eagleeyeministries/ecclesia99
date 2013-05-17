@@ -13,4 +13,7 @@ class PagesController < ApplicationController
 
   def music
   end
+
+  def testimonials
+  end
 end

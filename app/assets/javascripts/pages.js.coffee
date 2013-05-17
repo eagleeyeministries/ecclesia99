@@ -18,5 +18,9 @@ $ ->
     $('ul.nav li#courses').addClass('active')
   else if (pagePath.indexOf("contact") != -1)
     $('ul.nav li#contact').addClass('active')
+  else if (pagePath.indexOf("music") != -1)
+    $('ul.nav li#music').addClass('active')
+  else if (pagePath.indexOf("testimonials") != -1)
+    $('ul.nav li#testimonials').addClass('active')
   else
     $('ul.nav li#home').addClass('active')
