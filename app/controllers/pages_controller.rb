@@ -10,4 +10,7 @@ class PagesController < ApplicationController
 
   def courses
   end
+
+  def music
+  end
 end
